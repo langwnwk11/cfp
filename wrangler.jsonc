@@ -16,10 +16,10 @@
 	],
 	"placement": {
     	// 显式指定靠近 AWS 弗吉尼亚北部 (us-east-1)
-    	//"region": "aws:us-east-1" 
+    	"region": "aws:us-east-1" 
     
     	// 或者谷歌云美国东4： 
-    	"region": "gcp:us-east4"
+    	// "region": "gcp:us-east4"
     	// 或者微软云美国东部： "region": "azure:eastus"
   	}
 	/**
