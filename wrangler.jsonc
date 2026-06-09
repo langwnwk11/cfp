@@ -8,7 +8,21 @@
 	"main": "src/index.js",
 	"compatibility_date": "2026-06-09",
 	"observability": {
-		"enabled": true
+		"enabled": true,
+		
+	    "head_sampling_rate": 1,
+	    "logs": {
+	      "enabled": true,
+	      "head_sampling_rate": 1,
+	      "persist": true,
+	      "invocation_logs": true
+	    },
+	    "traces": {
+	      "enabled": true,
+	      "persist": true,
+	      "head_sampling_rate": 1
+	    }
+   
 	},
 	"upload_source_maps": true,
 	"compatibility_flags": [
@@ -21,7 +35,8 @@
     	// 或者谷歌云美国东4： 
     	// "region": "gcp:us-east4"
     	// 或者微软云美国东部： "region": "azure:eastus"
-  	}
+  	} 
+
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
